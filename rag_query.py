@@ -38,13 +38,18 @@ TOP_K_SENTENCES = 6
 TOP_K_TABLES    = 3
 
 SYSTEM_PROMPT = """You are an expert on the National Building Code of Canada (NBC) Part 4 – Structural Design.
-Answer questions accurately using ONLY the provided context excerpts.
+Answer questions accurately using the provided context excerpts.
 Rules:
-- Cite the source (sentence_id or table_id) for every claim you make, using inline brackets, e.g. [4.1.6.2.(1)] or [Table 4.1.6.2.-A].
-- If the context does not contain enough information, say so clearly instead of guessing.
+- Cite the source (sentence_id or table_id) for every claim, using inline brackets, e.g. [4.1.6.2.(1)] or [Table 4.1.6.2.-A].
 - Keep answers concise and structured. Use bullet points or numbered lists where appropriate.
 - Do not translate or paraphrase; quote the original English text when precision matters.
 - If a sentence has needs_review=true, mention that it may require verification.
+- If the context does not directly answer the question but you can infer the relevant clause or table
+  from the context references, always say: "Please refer to Clause X.X.X.X or Table X.X.X.X for the
+  complete requirements." Never say "the context does not contain" without also providing the most
+  likely clause reference based on what you do see.
+- If the answer involves a table (e.g. load combinations, importance factors), always name the table
+  explicitly and tell the user to consult it directly.
 """
 
 

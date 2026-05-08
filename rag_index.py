@@ -32,9 +32,10 @@ except ImportError:
     sys.exit("Run: python -m pip install chromadb")
 
 ROOT = Path(__file__).resolve().parent
-CLAUSES_PATH = ROOT / "part4_clauses_v2.json"
-TABLES_PATH  = ROOT / "part4_tables.json"
-CHROMA_DIR   = ROOT / "chroma_db"
+CLAUSES_PATH      = ROOT / "part4_clauses_v2.json"
+TABLES_PATH       = ROOT / "part4_tables.json"
+RAW_CLAUSES_PATH  = ROOT / "part4_clauses.json"   # original body text
+CHROMA_DIR        = ROOT / "chroma_db"
 
 COL_SENTENCES = "nbcc_sentences"
 COL_TABLES    = "nbcc_tables"
@@ -63,14 +64,26 @@ def sentence_doc(art: dict, s: dict) -> str:
     return "\n".join(parts)
 
 
-def table_doc(t: dict) -> str:
-    """Rich text used for embedding a table chunk."""
-    return "\n".join([
+def table_doc(t: dict, ctx: dict[str, str] | None = None) -> str:
+    """Rich text used for embedding a table chunk.
+
+    ctx: optional dict with extra keys 'description' and 'forming_part_of'
+    extracted from the original clause body surrounding the table.
+    """
+    parts = [
         f"[Table {t.get('table_id','')}]",
+        f"Article: {t.get('article_id','')}",
+    ]
+    if ctx and ctx.get("description"):
+        parts.append(f"Description: {ctx['description']}")
+    if ctx and ctx.get("forming_part_of"):
+        parts.append(f"Forming part of: {ctx['forming_part_of']}")
+    parts += [
         f"Title: {t.get('table_title','')}",
         "",
         t.get("content", ""),
-    ])
+    ]
+    return "\n".join(parts)
 
 
 # ── metadata helpers ────────────────────────────────────────────────────────
@@ -113,6 +126,67 @@ def table_meta(t: dict) -> dict:
     }
 
 
+# ── table context extractor ─────────────────────────────────────────────────
+
+import re as _re
+
+_H_STRIP_RE   = _re.compile(r"^\[H\d+\]\s*")
+_TABLE_ID_RE  = _re.compile(r"Table\s+([A-Za-z0-9][A-Za-z0-9\.\-]*[A-Za-z0-9])")
+_FORMING_RE   = _re.compile(r"Forming Part of (.+)", _re.IGNORECASE)
+
+
+def _build_table_context(raw_clauses: list[dict]) -> dict[str, dict[str, str]]:
+    """Scan raw clause bodies and extract descriptive text around each [TABLE] block.
+
+    Returns: table_id -> {"description": ..., "forming_part_of": ...}
+    """
+    ctx: dict[str, dict[str, str]] = {}
+
+    for row in raw_clauses:
+        lines = row.get("body", "").splitlines()
+        pending_table_id = ""
+        pending_desc = ""
+        pending_forming = ""
+
+        for line in lines:
+            stripped = line.strip()
+
+            if stripped == "[TABLE]":
+                if pending_table_id:
+                    ctx[pending_table_id] = {
+                        "description":     pending_desc,
+                        "forming_part_of": pending_forming,
+                    }
+                # reset for next table
+                pending_table_id = pending_desc = pending_forming = ""
+
+            elif stripped == "[/TABLE]":
+                pending_table_id = pending_desc = pending_forming = ""
+
+            elif stripped.startswith("[H"):
+                # strip H-tag, then look for "Table X.X.X" in the text
+                text = _H_STRIP_RE.sub("", stripped)
+                m = _TABLE_ID_RE.search(text)
+                if m:
+                    pending_table_id = m.group(1)
+                    before = text[: m.start()].strip()
+                    after  = text[m.end() :].strip(" \t()–-—")
+                    pending_desc = (before + " " + after).strip() or text
+                # else: non-table heading — ignore (reset only happens at [TABLE])
+
+            elif _FORMING_RE.match(stripped):
+                pending_forming = _FORMING_RE.match(stripped).group(1).strip()
+
+            elif stripped and pending_table_id and stripped not in ("[TABLE]", "[/TABLE]"):
+                # plain text line between the heading and [TABLE] — append to description
+                if stripped and not stripped.startswith("["):
+                    extra = stripped.strip("()")
+                    if extra and extra not in pending_desc:
+                        pending_desc = (pending_desc + " " + extra).strip()
+
+    return ctx
+
+
 # ── index builder ───────────────────────────────────────────────────────────
 
 def build_index(reset: bool = False) -> None:
@@ -121,6 +195,13 @@ def build_index(reset: bool = False) -> None:
     tables  = json.loads(TABLES_PATH.read_text(encoding="utf-8"))
 
     print(f"  {len(clauses)} articles  |  {sum(len(a['sentences']) for a in clauses)} sentences  |  {len(tables)} tables")
+
+    # build table context from original clause bodies
+    raw_clauses: list[dict] = []
+    if RAW_CLAUSES_PATH.is_file():
+        raw_clauses = json.loads(RAW_CLAUSES_PATH.read_text(encoding="utf-8"))
+    table_ctx = _build_table_context(raw_clauses)
+    print(f"  Table context extracted for {len(table_ctx)} table IDs")
 
     print(f"Initialising ChromaDB at {CHROMA_DIR} ...")
     ef = DefaultEmbeddingFunction()
@@ -176,7 +257,7 @@ def build_index(reset: bool = False) -> None:
         tid = t.get("table_key", "")
         if not tid or tid in existing_t:
             continue
-        docs_t.append(table_doc(t))
+        docs_t.append(table_doc(t, ctx=table_ctx.get(t.get("table_id", ""))))
         metas_t.append(table_meta(t))
         ids_t.append(tid)
 
