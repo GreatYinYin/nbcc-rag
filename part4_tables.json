@@ -1,0 +1,247 @@
+[
+  {
+    "table_key": "4.1.3.1:4.1.2.1.:1",
+    "article_id": "4.1.3.1",
+    "table_id": "4.1.2.1.",
+    "table_title": "Table 4.1.2.1.",
+    "content": "Type of Building\tImportance Category\nA Low Importance Category building is a building that represents a low direct or indirect hazard to human life in the event of structural failure.\tLow\nA Normal Importance Category building is a building that does not meet the criteria for a Low Importance Category building, High Importance Category building or post-disaster building.\tNormal\nA High Importance Category building is a building that provides a greater degree of safety to human life than a Normal Importance Category building. Community centres and elementary, middle and secondary schools are High Importance Category buildings.\tHigh\nA post-disaster building.\tPost-disaster"
+  },
+  {
+    "table_key": "4.1.3.1:4.1.3.2.-A:2",
+    "article_id": "4.1.3.1",
+    "table_id": "4.1.3.2.-A",
+    "table_title": "Table 4.1.3.2.-A",
+    "content": "Case\tLoad Combination(1)\tLoad Combination(1)\nCase\tPrincipal Loads\tCompanion Loads\n1\t1.4D(2)\t—\n2\t(1.25D(3) or 0.9D(4)) + 1.5L(5)\t1.0S(6) or 0.4W\n3\t(1.25D(3) or 0.9D(4)) + 1.5S\t1.0L(6)(7) or 0.4W\n4\t(1.25D(3) or 0.9D(4)) + 1.4W\t0.5L(7) or 0.5S\n5\t1.0D(4) + 1.0E(8)\t0.5L(6)(7) + 0.25S(6)"
+  },
+  {
+    "table_key": "4.1.3.3:4.1.3.2.-B:1",
+    "article_id": "4.1.3.3",
+    "table_id": "4.1.3.2.-B",
+    "table_title": "Table 4.1.3.2.-B",
+    "content": "Case\tLoad Combination(1)\tLoad Combination(1)\nCase\tPrincipal Loads\tCompanion Loads\n1\t(1.25D(2) or 0.9D(3))+ (1.5C+ 1.0LXC)\t1.0S(4) or 0.4W\n2\t(1.25D(2) or 0.9D(3))+ (1.5LXC(5) + 1.0C)\t1.0S(4) or 0.4W\n3\t(1.25D(2) or 0.9D(3)) + 1.5S\t1.0C + 1.0LXC(4)(6)\n4\t(1.25D(2) or 0.9D(3)) + 1.4W\t1.0C(7) + 0.5LXC(4)(6)\n5\t(1.25D(2) or 0.9D(3)) + C7\t—\n6\t1.0D(3) + 1.0E(8)\t1.0Cd + 0.5LXC(4)(6) + 0.25S(4)"
+  },
+  {
+    "table_key": "4.1.3.3:4.1.3.4.:2",
+    "article_id": "4.1.3.3",
+    "table_id": "4.1.3.4.",
+    "table_title": "Table 4.1.3.4.",
+    "content": "Limit State\tStructural Parameter\tLoad Case\tLoad Combinations\tLoad Combinations\nLimit State\tStructural Parameter\tLoad Case\tPrincipal Loads\tCompanion Loads\nDeflection for materials not subject to creep\tDeflection of the structure or of components of the structure(1)\t1 2 3\t1.0D + 1.0L 1.0D + 1.0W 1.0D + 1.0S\t0.3W or 0.35S 0.35L(2) or 0.35S 0.3W or 0.35L(2)\nDeflection for materials subject to creep\tTotal deflection of the structure or of components of the structure(3)\t1 2 3\t1.0D + 1.0Ls(4) + 1.0Lt(5) 1.0D + 1.0W 1.0D + 1.0S\t0.3W or 0.35S 0.35L(2) or 0.35S 0.3W or 0.35L(2)\nVibration serviceability\tAcceleration\t(6)\t(6)\t(6)"
+  },
+  {
+    "table_key": "4.1.5.3:4.1.5.3.:1",
+    "article_id": "4.1.5.3",
+    "table_id": "4.1.5.3.",
+    "table_title": "Table 4.1.5.3.",
+    "content": "Use of Area of Floor or Roof\tMinimum Specified Load, kPa\nAssembly Areas Except for the areas listed under b), c), d) and e), assembly areas with or without fixed seats including Arenas(1) (areas without fixed seats that have backs) Auditoria Churches (areas without fixed seats that have backs) Dance floors Dining areas(2) Foyers and entrance halls Grandstands(1) (areas without fixed seats that have backs), reviewing stands and bleachers Gymnasia Lecture halls(1) (areas without fixed seats that have backs) Museums Promenades Rinks Stadia(1) (areas without fixed seats that have backs) Theatres (areas without fixed seats that have backs) Other areas with similar uses Classrooms and courtrooms with or without fixed seats(1) Portions of assembly areas with fixed seats that have backs for the following uses: Arenas(1) Grandstands(1) Stadia(1) Portions of assembly areas with fixed seats that have backs for the following uses: Churches Lecture halls(1) Theatres Vomitories, exits, lobbies and corridors(1)\t4.8\nAssembly Areas Except for the areas listed under b), c), d) and e), assembly areas with or without fixed seats including Arenas(1) (areas without fixed seats that have backs) Auditoria Churches (areas without fixed seats that have backs) Dance floors Dining areas(2) Foyers and entrance halls Grandstands(1) (areas without fixed seats that have backs), reviewing stands and bleachers Gymnasia Lecture halls(1) (areas without fixed seats that have backs) Museums Promenades Rinks Stadia(1) (areas without fixed seats that have backs) Theatres (areas without fixed seats that have backs) Other areas with similar uses Classrooms and courtrooms with or without fixed seats(1) Portions of assembly areas with fixed seats that have backs for the following uses: Arenas(1) Grandstands(1) Stadia(1) Portions of assembly areas with fixed seats that have backs for the following uses: Churches Lecture halls(1) Theatres Vomitories, exits, lobbies and corridors(1)\t2.4\nAssembly Areas Except for the areas listed under b), c), d) and e), assembly areas with or without fixed seats including Arenas(1) (areas without fixed seats that have backs) Auditoria Churches (areas without fixed seats that have backs) Dance floors Dining areas(2) Foyers and entrance halls Grandstands(1) (areas without fixed seats that have backs), reviewing stands and bleachers Gymnasia Lecture halls(1) (areas without fixed seats that have backs) Museums Promenades Rinks Stadia(1) (areas without fixed seats that have backs) Theatres (areas without fixed seats that have backs) Other areas with similar uses Classrooms and courtrooms with or without fixed seats(1) Portions of assembly areas with fixed seats that have backs for the following uses: Arenas(1) Grandstands(1) Stadia(1) Portions of assembly areas with fixed seats that have backs for the following uses: Churches Lecture halls(1) Theatres Vomitories, exits, lobbies and corridors(1)\t2.9\nAssembly Areas Except for the areas listed under b), c), d) and e), assembly areas with or without fixed seats including Arenas(1) (areas without fixed seats that have backs) Auditoria Churches (areas without fixed seats that have backs) Dance floors Dining areas(2) Foyers and entrance halls Grandstands(1) (areas without fixed seats that have backs), reviewing stands and bleachers Gymnasia Lecture halls(1) (areas without fixed seats that have backs) Museums Promenades Rinks Stadia(1) (areas without fixed seats that have backs) Theatres (areas without fixed seats that have backs) Other areas with similar uses Classrooms and courtrooms with or without fixed seats(1) Portions of assembly areas with fixed seats that have backs for the following uses: Arenas(1) Grandstands(1) Stadia(1) Portions of assembly areas with fixed seats that have backs for the following uses: Churches Lecture halls(1) Theatres Vomitories, exits, lobbies and corridors(1)\t2.4\nAssembly Areas Except for the areas listed under b), c), d) and e), assembly areas with or without fixed seats including Arenas(1) (areas without fixed seats that have backs) Auditoria Churches (areas without fixed seats that have backs) Dance floors Dining areas(2) Foyers and entrance halls Grandstands(1) (areas without fixed seats that have backs), reviewing stands and bleachers Gymnasia Lecture halls(1) (areas without fixed seats that have backs) Museums Promenades Rinks Stadia(1) (areas without fixed seats that have backs) Theatres (areas without fixed seats that have backs) Other areas with similar uses Classrooms and courtrooms with or without fixed seats(1) Portions of assembly areas with fixed seats that have backs for the following uses: Arenas(1) Grandstands(1) Stadia(1) Portions of assembly areas with fixed seats that have backs for the following uses: Churches Lecture halls(1) Theatres Vomitories, exits, lobbies and corridors(1)\t4.8\nAttics(1)\t\nAccessible by a stairway in residential occupancies only\t1.4\nHaving limited accessibility so that there is no storage of equipment or material\t0.5\nBalconies\t\nExterior\t4.8\nInterior and mezzanines that could be used by an assembly of people as a viewing area(1)\t4.8\nInterior and mezzanines other than above\t(3)\nCorridors, lobbies and aisles(1)\t\nOther than those listed below\t4.8\nNot more than 1 200 mm in width, and all upper floor corridors of residential areas only of apartments, hotels and motels (that cannot be used by an assembly of people as a viewing area)\t(3)\nEquipment areas and service rooms including Generator rooms Mechanical equipment exclusive of elevators Machine rooms Pump rooms Transformer vaults Ventilating or air-conditioning equipment\t3.6(4)"
+  },
+  {
+    "table_key": "4.1.5.3:4.1.5.3.:2",
+    "article_id": "4.1.5.3",
+    "table_id": "4.1.5.3.",
+    "table_title": "Table 4.1.5.3. (Continued)",
+    "content": "Use of Area of Floor or Roof\tMinimum Specified Load, kPa\nExits and fire escapes\t4.8\nFactories\t6.0(4)\nFootbridges\t4.8\nGarages for Vehicles not exceeding 4 000 kg gross weight Vehicles exceeding 4 000 kg but not exceeding 9 000 kg gross weight Vehicles exceeding 9 000 kg gross weight(1)\t2.4 6.0 12.0\nKitchens (other than residential)\t4.8\nLibraries Stack rooms Reading and study rooms\t7.2 2.9\nOffice areas(1) (not including record storage and computer rooms) located in Basements, and floors, including mezzanines, with direct access to the exterior at ground level Other floors\t4.8 2.4\nOperating rooms and laboratories\t3.6\nPatients' bedrooms\t1.9\nRecreation areas that cannot be used for assembly purposes including Billiard rooms Bowling alleys Pool rooms\t3.6\nResidential areas (within the scope of Article 1.3.3.2. of Division A) Sleeping and living quarters in apartments, hotels, motels, boarding schools and colleges\t1.9\nResidential areas (within the scope of Article 1.3.3.3. of Division A) Bedrooms Other areas Stairs within dwelling units\t1.9\nRetail and wholesale areas\t4.8\nRoofs(1)\t1.0(5)\nSidewalks and driveways over areaways and basements(1)\t12.0(5)\nStorage areas\t4.8(4)\nToilet areas\t2.4\nUnderground slabs with earth cover\t(5)\nWarehouses\t4.8(4)"
+  },
+  {
+    "table_key": "4.1.5.8:4.1.5.9.:1",
+    "article_id": "4.1.5.8",
+    "table_id": "4.1.5.9.",
+    "table_title": "Table 4.1.5.9.",
+    "content": "Area of Floor or Roof\tMinimum Specified Concentrated Load, kN\tLoaded Area, mm × mm\nRoof surfaces\t1.3\t200 × 200\nFloors of classrooms\t4.5\t750 × 750\nFloors of offices, manufacturing buildings, hospital wards and stages\t9.0\t750 × 750\nFloors and areas used by vehicles not exceeding 4 000 kg gross weight\t18\t120 × 120\nFloors and areas used by vehicles exceeding 4 000 kg but not exceeding 9 000 kg gross weight\t36\t120 × 120\nFloors and areas used by vehicles exceeding 9 000 kg gross weight\t54(1)\t250 × 600(1)\nDriveways and sidewalks over areaways and basements\t54(1)\t250 × 600(1)"
+  },
+  {
+    "table_key": "4.1.5.14:4.1.5.11.:1",
+    "article_id": "4.1.5.14",
+    "table_id": "4.1.5.11.",
+    "table_title": "Table 4.1.5.11.",
+    "content": "Cause of Impact\tFactor\nOperation of cab or radio-operated cranes\t1.25\nOperation of pendant or hand-operated cranes\t1.10\nOperation of elevators\t(1)\nSupports for light machinery, shaft or motor-driven\t1.20\nSupports for reciprocating machinery (e.g., compressors)\t1.50\nSupports for power-driven units (e.g., piston engines)\t1.50"
+  },
+  {
+    "table_key": "4.1.6.2:4.1.6.2.-A:1",
+    "article_id": "4.1.6.2",
+    "table_id": "4.1.6.2.-A",
+    "table_title": "Table 4.1.6.2.-A",
+    "content": "Importance Category\tImportance Factor, Is\tImportance Factor, Is\nImportance Category\tULS\tSLS\nLow\t0.8\t0.9\nNormal\t1\t0.9\nHigh\t1.15\t0.9\nPost-disaster\t1.25\t0.9"
+  },
+  {
+    "table_key": "4.1.6.2:4.1.6.2.-B:2",
+    "article_id": "4.1.6.2",
+    "table_id": "4.1.6.2.-B",
+    "table_title": "Table 4.1.6.2.-B",
+    "content": "Value of\tValue of Cw\tValue of Cw\tValue of Cw\nValue of\t1.0\t0.75\t0.5\nValue of\tValue of Cb\tValue of Cb\tValue of Cb\n70\t0.80\t0.80\t0.80\n80\t0.82\t0.85\t0.91\n100\t0.85\t0.94\t1.11\n120\t0.88\t1.01\t1.27\n140\t0.90\t1.07\t1.40\n160\t0.92\t1.12\t1.51\n180\t0.93\t1.16\t1.60\n200\t0.95\t1.19\t1.67\n220\t0.96\t1.21\t1.73\n240\t0.96\t1.24\t1.78\n260\t0.97\t1.25\t1.82\n280\t0.98\t1.27\t1.85\n300\t0.98\t1.28\t1.88\n320\t0.98\t1.29\t1.90\n340\t0.99\t1.30\t1.92\n360\t0.99\t1.30\t1.93\n380\t0.99\t1.31\t1.95\n400\t0.99\t1.31\t1.96\n420\t0.99\t1.32\t1.96\n440\t1.00\t1.32\t1.97\n460\t1.00\t1.32\t1.98\n480\t1.00\t1.32\t1.98\n500\t1.00\t1.33\t1.98\n520\t1.00\t1.33\t1.99\n540\t1.00\t1.33\t1.99\n560\t1.00\t1.33\t1.99\n580\t1.00\t1.33\t1.99\n600\t1.00\t1.33\t1.99\n620\t1.00\t1.33\t2.00"
+  },
+  {
+    "table_key": "4.1.6.5:4.1.6.5.-A:1",
+    "article_id": "4.1.6.5",
+    "table_id": "4.1.6.5.-A",
+    "table_title": "Table 4.1.6.5.-A",
+    "content": "Distance from Roof Step, x\tFactors\tFactors\tFactors\nDistance from Roof Step, x\tCw\tCs(1)\tCa\n0\t1.0\tf()\tCa0\n0 < x ≤ xd\t1.0\tf()\tCa0 − (Ca0 − 1)(x/xd)\nxd < x ≤ 10h\t1.0\tf()\t1.0\nx > 10h\t1.0 for unexposed roof areas 0.75 for exposed roof areas 0.5 for exposed roof areas north of tree line\tf()\t1.0"
+  },
+  {
+    "table_key": "4.1.6.5:4.1.6.5.-B:2",
+    "article_id": "4.1.6.5",
+    "table_id": "4.1.6.5.-B",
+    "table_title": "Forming Part of Sentences 4.1.6.5.(1), (3) and (5), and Table 4.1.6.5.-B",
+    "content": "source area for snow in drift\tUpper Roof     h\tUpper Roof     h\n\t\t\nLower\tsnow drift Roof\tLower\tsnow drift Roof\tLower\tsnow drift Roof"
+  },
+  {
+    "table_key": "4.1.6.5:4.1.6.5.-B:3",
+    "article_id": "4.1.6.5",
+    "table_id": "4.1.6.5.-B",
+    "table_title": "Table 4.1.6.5.-B",
+    "content": "Parameter\tCase I\tCase II\tCase III\n\t1.0\t0.67\t0.67\nhp\tparapet height of upper-roof source area\tparapet height of lower-roof source area\tparapet height of lower-roof source area\n\twith ws and ls being the shorter and longer dimensions of the upper roof\twith ws and ls being the shorter and longer dimensions of the source area on the lower roof for upwind-facing step\twith ws and ls being the shorter and longer dimensions of the source area on the lower roof for downwind-facing step"
+  },
+  {
+    "table_key": "4.1.6.10:4.1.6.10.:1",
+    "article_id": "4.1.6.10",
+    "table_id": "4.1.6.10.",
+    "table_title": "Table 4.1.6.10.",
+    "content": "Load Case\tRange of Application\tFactors\tFactors\tFactors\tFactors\nLoad Case\tRange of Application\tAll Arch or Curved Roofs and Domes\tArch and Curved Roofs\tArch and Curved Roofs\tDomes\nLoad Case\tRange of Application\tCw\tCa Upwind Side\tCa Downwind Side\tCa Downwind Side\nCase I\tAll values of h/b\tAs stated in 4.1.6.2.(3) and (4)\t1.0\t1.0\t1.0\nCase II\tSlope at edge ≤ 30° h/b > 0.05 all values of x\t1.0\t0.0\t\t\nCase II\tSlope at edge > 30° h/b > 0.05 0 < x < x30\t1.0\t0.0\t\t\nCase II\tSlope at edge > 30° h/b > 0.05 x ≥ x30\t1.0\t0.0"
+  },
+  {
+    "table_key": "4.1.7.1:4.1.7.3.:1",
+    "article_id": "4.1.7.1",
+    "table_id": "4.1.7.3.",
+    "table_title": "Table 4.1.7.3.",
+    "content": "Importance Category\tImportance Factor, IW\tImportance Factor, IW\nImportance Category\tULS\tSLS\nLow\t0.8\t0.75\nNormal\t1\t0.75\nHigh\t1.15\t0.75\nPost-disaster\t1.25\t0.75"
+  },
+  {
+    "table_key": "4.1.7.3:4.1.7.4.:1",
+    "article_id": "4.1.7.3",
+    "table_id": "4.1.7.4.",
+    "table_title": "Table 4.1.7.4.",
+    "content": "Shape of Hill or Escarpment\tΔSmax(1)\t\tk\tk\nShape of Hill or Escarpment\tΔSmax(1)\t\tx < 0\tx ≥ 0\n2-dimensional hill\t2.2Hh/Lh\t3\t1.5\t1.5\n2-dimensional escarpment\t1.3Hh/Lh\t2.5\t1.5\t4\n3-dimensional axi-symmetrical hill\t1.6Hh/Lh\t4\t1.5\t1.5"
+  },
+  {
+    "table_key": "4.1.7.6:4.1.7.6.:1",
+    "article_id": "4.1.7.6",
+    "table_id": "4.1.7.6.",
+    "table_title": "Table 4.1.7.6.",
+    "content": "Load Case\tRoof Slope\tExternal Peak Values of CgCp(1)(2)\tExternal Peak Values of CgCp(1)(2)\tExternal Peak Values of CgCp(1)(2)\tExternal Peak Values of CgCp(1)(2)\tExternal Peak Values of CgCp(1)(2)\tExternal Peak Values of CgCp(1)(2)\tExternal Peak Values of CgCp(1)(2)\tExternal Peak Values of CgCp(1)(2)\tExternal Peak Values of CgCp(1)(2)\tExternal Peak Values of CgCp(1)(2)\tExternal Peak Values of CgCp(1)(2)\tExternal Peak Values of CgCp(1)(2)\nLoad Case\tRoof Slope\tBuilding Surfaces\tBuilding Surfaces\tBuilding Surfaces\tBuilding Surfaces\tBuilding Surfaces\tBuilding Surfaces\tBuilding Surfaces\tBuilding Surfaces\tBuilding Surfaces\tBuilding Surfaces\tBuilding Surfaces\tBuilding Surfaces\nLoad Case\tRoof Slope\t1\t1E\t2\t2E\t3\t3E\t4\t4E\t5\t5E\t6\t6E\n\t0° to 5°\t0.75\t1.15\t−1.3\t−2.0\t−0.7\t−1.0\t−0.55\t−0.8\t–\t–\t–\t–\nA\t20° 30° to 45°\t1.0 1.05\t1.5 1.3\t−1.3 0.4\t−2.0 0.5\t−0.9 −0.8\t−1.3 −1.0\t−0.8 −0.7\t−1.2 −0.9\t– –\t– –\t– –\t– –\n\t90°\t1.05\t1.3\t1.05\t1.3\t−0.7\t−0.9\t−0.7\t−0.9\t–\t–\t–\t–\nB\t0° to 90°\t−0.85\t−0.9\t−1.3\t−2.0\t−0.7\t−1.0\t−0.85\t−0.9\t0.75\t1.15\t−0.55\t−0.8"
+  },
+  {
+    "table_key": "4.1.7.7:4.1.7.7.:1",
+    "article_id": "4.1.7.7",
+    "table_id": "4.1.7.7.",
+    "table_title": "Table 4.1.7.7.",
+    "content": "Building Openings\tValues for Cpi\nUniformly distributed small openings amounting to less than 0.1% of the\t–0.15 to 0.0\ntotal surface area of the building\t\nNon-uniformly distributed openings of which none is significant or\t–0.45 to +0.30\nsignificant openings that are wind-resistant and closed during storms\t\nLarge openings likely to remain open during storms\t–0.70 to +0.70"
+  },
+  {
+    "table_key": "4.1.7.14:UNKNOWN_4.1.7.14_1:1",
+    "article_id": "4.1.7.14",
+    "table_id": "UNKNOWN_4.1.7.14_1",
+    "table_title": "",
+    "content": "WL 2h\t2h\tWL 2h\t2h\tWL 2h\t2h\n3\t2\t3\n2\t1\t2\n3\t2\t3"
+  },
+  {
+    "table_key": "4.1.8.4:4.1.8.4.-A:1",
+    "article_id": "4.1.8.4",
+    "table_id": "4.1.8.4.-A",
+    "table_title": "Table 4.1.8.4.-A",
+    "content": "Ground Profile Characteristics\tGround Profile Characteristics\tSite Designation\nAverage Shear Wave Velocity in Top 30 m, Vs30, Calculated from In Situ Measurements, in m/s\tAdditional Characteristics\tSite Designation\nVs30 > 760\tGround profile contains more than 3 m of softer materials between rock and the underside of footing or mat foundations\tX760\nVs30 > 140\tGround profile contains more than 3 m of soil with all the following characteristics: plasticity index, PI > 20, moisture content, w ≥ 40%, and undrained shear strength, su < 25 kPa\tXE\nVs30 > 140\tGround profile contains liquefiable soil, quick and highly sensitive clay, collapsible weakly cemented soil, or other soil susceptible to failure or collapse under seismic loading, more than 3 m of peat and/or highly organic clay, more than 8 m of highly plastic soil (with PI > 75), or more than 30 m of soft to medium-stiff clay\tXF\nVs30 ≤ 140\tn/a\tXF"
+  },
+  {
+    "table_key": "4.1.8.4:4.1.8.4.-B:2",
+    "article_id": "4.1.8.4",
+    "table_id": "4.1.8.4.-B",
+    "table_title": "Table 4.1.8.4.-B",
+    "content": "Site Class, S\tGround Profile\tGround Profile Characteristics\tGround Profile Characteristics\tGround Profile Characteristics\nSite Class, S\tGround Profile\tAverage Shear Wave Velocity in Top 30 m, Vs30, in m/s(1)\tAverage Standard Penetration Resistance in Top 30 m, , in Blows per 0.3 m\tAverage Undrained Shear Strength in Top 30 m, , in kPa\nA\tHard rock(2)\tVs30 > 1 500\tn/a\tn/a\nB\tRock(2)\t760 < Vs30 ≤ 1 500\tn/a\tn/a\nC\tVery dense soil and soft rock\t360 < Vs30 ≤ 760\t> 50\t> 100"
+  },
+  {
+    "table_key": "4.1.8.4:4.1.8.4.-B:3",
+    "article_id": "4.1.8.4",
+    "table_id": "4.1.8.4.-B",
+    "table_title": "Table 4.1.8.4.-B (Continued)",
+    "content": "Site Class, S\tGround Profile\tGround Profile Characteristics\tGround Profile Characteristics\tGround Profile Characteristics\nSite Class, S\tGround Profile\tAverage Shear Wave Velocity in Top 30 m, Vs30, in m/s(1)\tAverage Standard Penetration Resistance in Top 30 m, , in Blows per 0.3 m\tAverage Undrained Shear Strength in Top 30 m, , in kPa\nD\tStiff soil\t180 < Vs30 ≤ 360\t15 <  ≤ 50\t50 <  ≤ 100\nE\tSoft soil\t140 < Vs30 ≤ 180\t10 <  ≤ 15\t40 <  ≤ 50\nE\tSoft soil\tAny ground profile other than Site Class F that contains more than 3 m of soil with all the following characteristics: plasticity index, PI > 20, moisture content, w ≥ 40%, and undrained shear strength, su < 25 kPa\tAny ground profile other than Site Class F that contains more than 3 m of soil with all the following characteristics: plasticity index, PI > 20, moisture content, w ≥ 40%, and undrained shear strength, su < 25 kPa\tAny ground profile other than Site Class F that contains more than 3 m of soil with all the following characteristics: plasticity index, PI > 20, moisture content, w ≥ 40%, and undrained shear strength, su < 25 kPa\nF\tOther soils(3)\tVs30 ≤ 140\t≤ 10\t≤ 40\nF\tOther soils(3)\tAny ground profile that contains liquefiable soil, quick and highly sensitive clay, collapsible weakly cemented soil, or other soil susceptible to failure or collapse under seismic loading, more than 3 m of peat and/or highly organic clay, more than 8 m of highly plastic soil (with PI > 75), or more than 30 m of soft to medium-stiff clay\tAny ground profile that contains liquefiable soil, quick and highly sensitive clay, collapsible weakly cemented soil, or other soil susceptible to failure or collapse under seismic loading, more than 3 m of peat and/or highly organic clay, more than 8 m of highly plastic soil (with PI > 75), or more than 30 m of soft to medium-stiff clay\tAny ground profile that contains liquefiable soil, quick and highly sensitive clay, collapsible weakly cemented soil, or other soil susceptible to failure or collapse under seismic loading, more than 3 m of peat and/or highly organic clay, more than 8 m of highly plastic soil (with PI > 75), or more than 30 m of soft to medium-stiff clay"
+  },
+  {
+    "table_key": "4.1.8.4:4.1.8.4.-C:4",
+    "article_id": "4.1.8.4",
+    "table_id": "4.1.8.4.-C",
+    "table_title": "Table 4.1.8.4.-C",
+    "content": "Period, T, in s\tDesign Spectral Acceleration, S(T)\n≤ 0.2\tSa(0.2,X) or Sa(0.5,X), whichever is greater\n0.5\tSa(0.5,X)\n1.0\tSa(1.0,X)\n2.0\tSa(2.0,X)\n5.0\tSa(5.0,X)\n10.0\tSa(10.0,X)"
+  },
+  {
+    "table_key": "4.1.8.6:4.1.8.5.-A:1",
+    "article_id": "4.1.8.6",
+    "table_id": "4.1.8.5.-A",
+    "table_title": "Table 4.1.8.5.-A",
+    "content": "Importance Category\tImportance Factor, IE\tImportance Factor, IE\nImportance Category\tULS\tSLS(1)\nLow\t0.8\t\nNormal\t1.0\t(2)\nHigh\t1.3\t\nPost-disaster\t1.5"
+  },
+  {
+    "table_key": "4.1.8.6:4.1.8.5.-B:2",
+    "article_id": "4.1.8.6",
+    "table_id": "4.1.8.5.-B",
+    "table_title": "Table 4.1.8.5.-B",
+    "content": "Seismic Category(1)\tIES(0.2)\tIES(1.0)\nSC1\tIES(0.2) < 0.2\tIES(1.0) < 0.1\nSC2\t0.2 ≤ IES(0.2) < 0.35\t0.1 ≤ IES(1.0) < 0.2\nSC3\t0.35 ≤ IES(0.2) ≤ 0.75\t0.2 ≤ IES(1.0) ≤ 0.3\nSC4\tIES(0.2) > 0.75\tIES(1.0) > 0.3"
+  },
+  {
+    "table_key": "4.1.8.6:4.1.8.6.:3",
+    "article_id": "4.1.8.6",
+    "table_id": "4.1.8.6.",
+    "table_title": "Table 4.1.8.6.",
+    "content": "Type\tIrregularity Type and Definition\tNotes\n1\tVertical Stiffness Irregularity For concrete and masonry shear walls, vertical stiffness irregularity shall be considered to exist where the lateral stiffness of the SFRS in any storey is less than 70% of the stiffness in an adjacent storey, or less than 80% of the average stiffness in the three storeys above or below. For all other types of SFRS, vertical stiffness irregularity shall be considered to exist where the interstorey deflection under lateral earthquake forces divided by the interstorey height, hs, of any storey is greater than 130% of that of an adjacent storey.\t(3)(4)(5)\n2\tWeight (mass) Irregularity Weight irregularity shall be considered to exist where the weight, Wi, of any storey is more than 150% of the weight of an adjacent storey. A roof that is lighter than the floor below need not be considered.\t(3)\n3\tVertical Geometric Irregularity Vertical geometric irregularity shall be considered to exist where the horizontal dimension of the SFRS in any storey is more than 130% of that in an adjacent storey.\t(3)(4)(6)\n4\tIn-Plane Discontinuity in Vertical Lateral-Force-Resisting Element Except for braced frames and moment-resisting frames, an in-plane discontinuity shall be considered to exist where there is an offset of a lateral-force-resisting element of the SFRS or a reduction in lateral stiffness of the resisting element in the storey below.\t(3)(4)(6)\n5\tOut-of-Plane Offsets Discontinuities in a lateral force path, such as out-of-plane offsets of the vertical elements of the SFRS.\t(3)(4)(6)\n6\tDiscontinuity in Capacity – Weak Storey A weak storey is one in which the storey shear strength is less than that in the storey above. The storey shear strength is the total strength of all seismic-resisting elements of the SFRS sharing the storey shear for the direction under consideration.\t(3)(4)\n7\tTorsional Sensitivity (to be considered when diaphragms are not flexible) Torsional sensitivity shall be considered to exist when the ratio B calculated according to Sentence 4.1.8.11.(10) exceeds 1.7.\t(3)(4)(7)\n8\tNon-orthogonal Systems A non-orthogonal system irregularity shall be considered to exist when the SFRS is not oriented along a set of orthogonal axes.\t(3)(8)\n9\tGravity-Induced Lateral Demand Irregularity Gravity-induced lateral demand irregularity on the SFRS shall be considered to exist where the ratio  calculated in accordance with Sentence 4.1.8.10.(7) exceeds 0.1 for an SFRS with self-centering characteristics and 0.03 for other systems.\t(3)(4)(8)\n10\tSloped Column Irregularity Sloped column irregularity shall be considered to exist where a vertical member that is inclined more than 2° from the vertical supports a portion of the weight of the building in axial compression.\t(4)"
+  },
+  {
+    "table_key": "4.1.8.9:4.1.8.9.:1",
+    "article_id": "4.1.8.9",
+    "table_id": "4.1.8.9.",
+    "table_title": "Table 4.1.8.9.",
+    "content": "Type of SFRS\tRd\tRo\tRestrictions(2)\tRestrictions(2)\tRestrictions(2)\tRestrictions(2)\nType of SFRS\tRd\tRo\tSeismic Category\tSeismic Category\tSeismic Category\tSeismic Category\nType of SFRS\tRd\tRo\tSC1\tSC2\tSC3\tSC4\nSteel Structures Designed and Detailed According to CSA S16(3)(4)\tSteel Structures Designed and Detailed According to CSA S16(3)(4)\tSteel Structures Designed and Detailed According to CSA S16(3)(4)\tSteel Structures Designed and Detailed According to CSA S16(3)(4)\tSteel Structures Designed and Detailed According to CSA S16(3)(4)\tSteel Structures Designed and Detailed According to CSA S16(3)(4)\tSteel Structures Designed and Detailed According to CSA S16(3)(4)\nDuctile moment-resisting frames\t5.0\t1.5\tNL\tNL\tNL\tNL\nModerately ductile moment-resisting frames\t3.5\t1.5\tNL\tNL\tNL\tNL\nLimited ductility moment-resisting frames\t2.0\t1.3\tNL\tNL\t60\t30"
+  },
+  {
+    "table_key": "4.1.8.10:4.1.8.9.:1",
+    "article_id": "4.1.8.10",
+    "table_id": "4.1.8.9.",
+    "table_title": "Table 4.1.8.9. (Continued)",
+    "content": "Type of SFRS\tRd\tRo\tRestrictions(2)\tRestrictions(2)\tRestrictions(2)\tRestrictions(2)\nType of SFRS\tRd\tRo\tSeismic Category\tSeismic Category\tSeismic Category\tSeismic Category\nType of SFRS\tRd\tRo\tSC1\tSC2\tSC3\tSC4\nLimited ductility cross-laminated timber shear walls: platform-type construction\t1.0\t1.3\t30\t30\t30\t20\nBraced or moment-resisting frames with ductile connections Moderately ductile Limited ductility\t2.0 1.5\t1.5 1.5\tNL NL\tNL NL\t20 15\t20 15\nOther wood- or gypsum-based SFRSs not listed above\t1.0\t1.0\t15\t15\tNP\tNP\nMasonry Structures Designed and Detailed According to CSA S304\tMasonry Structures Designed and Detailed According to CSA S304\tMasonry Structures Designed and Detailed According to CSA S304\tMasonry Structures Designed and Detailed According to CSA S304\tMasonry Structures Designed and Detailed According to CSA S304\tMasonry Structures Designed and Detailed According to CSA S304\tMasonry Structures Designed and Detailed According to CSA S304\nDuctile shear walls\t3.0\t1.5\tNL\tNL\t60\t40\nModerately ductile shear walls\t2.0\t1.5\tNL\tNL\t60\t40\nConventional construction Shear walls Moment-resisting frames\t1.5 1.5\t1.5 1.5\tNL NL\t60 30\t30 NP\t15 NP\nUnreinforced masonry\t1.0\t1.0\t30\t15\tNP\tNP\nOther masonry SFRSs not listed above\t1.0\t1.0\t15\tNP\tNP\tNP\nCold-Formed Steel Structures Designed and Detailed According to CSA S136\tCold-Formed Steel Structures Designed and Detailed According to CSA S136\tCold-Formed Steel Structures Designed and Detailed According to CSA S136\tCold-Formed Steel Structures Designed and Detailed According to CSA S136\tCold-Formed Steel Structures Designed and Detailed According to CSA S136\tCold-Formed Steel Structures Designed and Detailed According to CSA S136\tCold-Formed Steel Structures Designed and Detailed According to CSA S136\nShear walls Screw-connected shear walls – wood-based panels Screw-connected shear walls – wood-based and gypsum panels in combination Diagonal strap concentrically braced walls Limited ductility Conventional construction\t2.5 1.5   1.9 1.2\t1.7 1.7   1.3 1.3\t20 20   20 15\t20 20   20 15\t20 20   20 NP\t20 20   20 NP\nOther cold-formed SFRSs not defined above\t1.0\t1.0\t15\t15\tNP\tNP"
+  },
+  {
+    "table_key": "4.1.8.11:4.1.8.11.:1",
+    "article_id": "4.1.8.11",
+    "table_id": "4.1.8.11.",
+    "table_title": "Table 4.1.8.11.",
+    "content": "S(0.2)/S(5.0)\tMv for Ta ≤ 0.5\tMv for Ta = 1.0\tMv for Ta = 2.0\tMv for Ta ≥ 5.0\tJ for Ta ≤ 0.5\tJ for Ta = 1.0\tJ for Ta = 2.0\tJ for Ta ≥ 5.0\nMoment-Resisting Frames\tMoment-Resisting Frames\tMoment-Resisting Frames\tMoment-Resisting Frames\tMoment-Resisting Frames\tMoment-Resisting Frames\tMoment-Resisting Frames\tMoment-Resisting Frames\tMoment-Resisting Frames\n5\t1\t1\t1\t(5)\t1\t1\t0.95\t(5)\n20\t1\t1\t1\t(5)\t1\t0.97\t0.88\t(5)\n40\t1\t1\t1\t(5)\t1\t0.90\t0.79\t(5)\n70\t1\t1\t1\t(5)\t0.98\t0.88\t0.70\t(5)\nCoupled Walls(6)\tCoupled Walls(6)\tCoupled Walls(6)\tCoupled Walls(6)\tCoupled Walls(6)\tCoupled Walls(6)\tCoupled Walls(6)\tCoupled Walls(6)\tCoupled Walls(6)\n5\t1\t1\t1\t1(7)\t1\t1\t0.95\t0.80(8)\n20\t1\t1\t1\t1.09(7)\t1\t0.97\t0.88\t0.66(8)\n40\t1\t1\t1\t1.33(7)\t1\t0.90\t0.79\t0.52(8)\n70\t1\t1\t1\t1.90(7)\t0.98\t0.88\t0.70\t0.40(8)\nBraced Frames\tBraced Frames\tBraced Frames\tBraced Frames\tBraced Frames\tBraced Frames\tBraced Frames\tBraced Frames\tBraced Frames\n5\t1\t1\t1\t(5)\t1\t0.98\t0.93\t(5)\n20\t1\t1\t1\t(5)\t1\t0.91\t0.80\t(5)\n40\t1\t1\t1\t(5)\t0.91\t0.82\t0.72\t(5)\n70\t1\t1\t1.19\t(5)\t0.91\t0.77\t0.61\t(5)\nWalls, Wall-Frame Systems\tWalls, Wall-Frame Systems\tWalls, Wall-Frame Systems\tWalls, Wall-Frame Systems\tWalls, Wall-Frame Systems\tWalls, Wall-Frame Systems\tWalls, Wall-Frame Systems\tWalls, Wall-Frame Systems\tWalls, Wall-Frame Systems\n5\t1\t1\t1\t1.30(7)\t1\t1\t0.85\t0.59(8)\n20\t1\t1\t1.18\t2.50(7)\t1\t0.80\t0.60\t0.35(8)\n40\t1\t1.25\t1.85\t4.10(7)\t0.80\t0.59\t0.42\t0.23(8)\n70\t1\t1.25\t2.30\t6.40(7)\t0.80\t0.56\t0.30\t0.18(8)\nOther Systems\tOther Systems\tOther Systems\tOther Systems\tOther Systems\tOther Systems\tOther Systems\tOther Systems\tOther Systems\n5\t1\t1\t1\t(5)\t1\t1\t0.85\t(5)\n20\t1\t1\t1.18\t(5)\t1\t0.80\t0.60\t(5)\n40\t1\t1.25\t1.85\t(5)\t0.80\t0.59\t0.44\t(5)\n70\t1\t1.37\t2.30\t(5)\t0.80\t0.56\t0.30\t(5)"
+  },
+  {
+    "table_key": "4.1.8.18:4.1.8.18.:1",
+    "article_id": "4.1.8.18",
+    "table_id": "4.1.8.18.",
+    "table_title": "Table 4.1.8.18.",
+    "content": "Category\tPart or Portion of Building\tCp\tAr\tRp\nArchitectural and Structural Components\tArchitectural and Structural Components\tArchitectural and Structural Components\tArchitectural and Structural Components\tArchitectural and Structural Components\n1\tAll exterior and interior walls, and cladding panels, except those in Category 2 or 3\t1.00\t1.00\t2.50\n2\tCantilever parapet and other cantilever walls, including cantilever cladding panels, except retaining walls\t1.00\t2.50\t2.50\n3\tExterior and interior ornamentations and appendages\t1.00\t2.50\t2.50\n4\tFloors and roofs acting as diaphragms(2)\t–\t–\t–\n5\tTowers, chimneys, smokestacks and penthouses when connected to or forming part of a building\t1.00\t2.50\t2.50\n6\tHorizontally cantilevered floors, balconies, beams, etc.\t1.00\t1.00\t2.50\n7\tSuspended ceilings, light fixtures and other attachments to ceilings with independent vertical support\t1.00\t1.00\t2.50\n8\tMasonry veneer connections\t1.00\t1.00\t1.50\n9\tAccess floors\t1.00\t1.00\t2.50\n10\tMasonry or concrete fences more than 1.8 m tall\t1.00\t1.00\t2.50\nMechanical and Electrical Components\tMechanical and Electrical Components\tMechanical and Electrical Components\tMechanical and Electrical Components\tMechanical and Electrical Components\n11\tMachinery, fixtures, equipment and tanks (including contents) that are rigid and rigidly connected that are flexible or flexibly connected\t\t\t\n\tMachinery, fixtures, equipment and tanks (including contents) that are rigid and rigidly connected that are flexible or flexibly connected\t1.00\t1.00\t1.25\n\tMachinery, fixtures, equipment and tanks (including contents) that are rigid and rigidly connected that are flexible or flexibly connected\t1.00\t2.50\t2.50"
+  },
+  {
+    "table_key": "4.4.2.1:4.5.1.1.:1",
+    "article_id": "4.4.2.1",
+    "table_id": "4.5.1.1.",
+    "table_title": "Table 4.5.1.1. (Continued)",
+    "content": "Provision\tFunctional Statements and Objectives(1)\n4.1.1.3. Design Requirements\t4.1.1.3. Design Requirements\n(1)\t[F20-OS2.1]\n(2)\t[F22-OP2.4]\n(2)\t[F22-OH4]\n(3)\t[F20-OS2.1] Applies to structural members where temporary overloading during construction may result in impairment of that or any other member.\n(4)\t[F20,F80,F82-OS2.1]\n(5)\t[F20-OP2.1] [F22-OP2.4]\n(5)\t[F20-OS2.3,OS2.4]\n4.1.1.5. Design Basis\t4.1.1.5. Design Basis\n(2)\t[F20-OS2.1] [F22-OS2.4,OS2.5]\n(2)\t[F20-OP2.1] [F22-OP2.4,OP2.5]\n(2)\t[F22-OH4]\n4.1.2.1. Loads and Effects\t4.1.2.1. Loads and Effects\n(1)\t[F20-OS2.1]\n(1)\t[F20-OP2.1] [F22-OP2.4]\n(1)\t[F22-OH4]\n(2)\t[F20-OS2.1]\n(3)\t[F20-OS2.1]"
+  },
+  {
+    "table_key": "4.5.1.1:4.5.1.1.:1",
+    "article_id": "4.5.1.1",
+    "table_id": "4.5.1.1.",
+    "table_title": "Table 4.5.1.1. (Continued)",
+    "content": "Provision\tFunctional Statements and Objectives(1)\n4.4.1.1. Design Basis for Air-, Cable- and Frame-Supported Membrane Structures\t4.4.1.1. Design Basis for Air-, Cable- and Frame-Supported Membrane Structures\n(1)\t[F20-OS2.1] [F80-OS2.3]\n(1)\t[F20-OP2.1] [F22-OP2.4] [F80-OP2.3]\n(1)\t[F22-OH4]\n4.4.2.1. Design Basis for Storage Garages and Repair Garages\t4.4.2.1. Design Basis for Storage Garages and Repair Garages\n(1)\t[F21,F61,F80-OS2.3]\n(1)\t[F21,F61,F80-OP2.3,OP2.4]\n(1)\t[F21,F61,F80-OH4]"
+  },
+  {
+    "table_key": "A-4.1.6.9:A-4.1.6.9.:1",
+    "article_id": "A-4.1.6.9",
+    "table_id": "A-4.1.6.9.",
+    "table_title": "Table A-4.1.6.9.",
+    "content": "Load Case\tRoof Slope, \tFactors\tFactors\tFactors\tFactors\nLoad Case\tRoof Slope, \tCw\tCs(1)\tCa\tCa\nLoad Case\tRoof Slope, \tCw\tCs(1)\tUpwind Side\tDownwind Side\nI\t0° ≤  ≤ 90°\t(2)\tf()\t1.0\t1.0\nII(3)\t15° <  ≤ 20° 20° <  ≤ 90°\t1.0\tf()\t0.0\t0.25 + /20 1.25"
+  },
+  {
+    "table_key": "A-4.1.6.16.(6):UNKNOWN_A-4.1.6.16.(6)_1:1",
+    "article_id": "A-4.1.6.16.(6)",
+    "table_id": "UNKNOWN_A-4.1.6.16.(6)_1",
+    "table_title": "",
+    "content": ""
+  },
+  {
+    "table_key": "A-4.1.7.8.(2):UNKNOWN_A-4.1.7.8.(2)_1:1",
+    "article_id": "A-4.1.7.8.(2)",
+    "table_id": "UNKNOWN_A-4.1.7.8.(2)_1",
+    "table_title": "",
+    "content": "B\tB\tA"
+  }
+]

@@ -1,0 +1,30 @@
+# API keys / secrets
+test.py
+.env
+.env.*
+
+# Streamlit secrets (local only — set via Streamlit Cloud dashboard for prod)
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Large source documents (not needed for the app)
+NBC 2020 Volume 1-2.docx
+part4.txt
+
+# Intermediate build files
+*.checkpoint.json
+part4_logic.json
+part4_logic.checkpoint.json
+part4_tables.checkpoint.json
+part4_clauses_v2.checkpoint.json
+
+# OS
+.DS_Store
+Thumbs.db
