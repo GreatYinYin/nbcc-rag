@@ -70,9 +70,11 @@ def _api_key() -> str:
 def _load_chroma():
     ef = DefaultEmbeddingFunction()
     client = chromadb.PersistentClient(path=str(CHROMA_DIR))
-    col_s = client.get_collection(COL_SENTENCES, embedding_function=ef)
-    col_t = client.get_collection(COL_TABLES,    embedding_function=ef)
-    return col_s, col_t
+    # Load without passing embedding_function — we embed queries ourselves
+    # to avoid ChromaDB 1.5.x re-loading the stored EF config from SQLite.
+    col_s = client.get_collection(COL_SENTENCES)
+    col_t = client.get_collection(COL_TABLES)
+    return col_s, col_t, ef
 
 
 # ── singleton cache (avoids reloading the embedding model on each call) ──────
@@ -93,15 +95,19 @@ def _get_clients():
 
 def retrieve(query: str) -> tuple[list[dict], list[dict]]:
     """Return (sentence_hits, table_hits) sorted by relevance."""
-    (col_s, col_t), _ = _get_clients()
+    (col_s, col_t, ef), _ = _get_clients()
+
+    # Pre-compute embedding ourselves so ChromaDB uses query_embeddings
+    # instead of query_texts, bypassing its stored-EF-config loading path.
+    q_emb = ef([query])
 
     rs = col_s.query(
-        query_texts=[query],
+        query_embeddings=q_emb,
         n_results=TOP_K_SENTENCES,
         include=["metadatas", "distances", "documents"],
     )
     rt = col_t.query(
-        query_texts=[query],
+        query_embeddings=q_emb,
         n_results=TOP_K_TABLES,
         include=["metadatas", "distances"],
     )
